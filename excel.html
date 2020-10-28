@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="topnav">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="excel.html">Excel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form id="excelform">
+            <fieldset>
+                <h4>Enter your numbers separated by spaces:</h4>
+                <input type="text" id="numbers" required>
+                <br>Please Select your operation:<br>
+
+                <input type="radio" id="sum" name="excel" checked value="1"> AutoSum<br>
+                <input type="radio" id="avg" name="excel" value="2">Average <br>
+                <input type="radio" id="max" name="excel" value="3">Max<br>
+                <input type="radio" id="min" name="excel" value="4">Min<br>
+
+                <div>
+
+                    <input type="submit" value="Calculate" onclick="return myExcelFuns()">
+                    <input type="reset" value="Clear Numbers">
+
+                </div>
+            </fieldset>
+        </form>
+        <br>
+
+        <fieldset>
+            <div>
+                <h4>The result is:</h4> <span id="result"></span>
+            </div>
+        </fieldset>
+
+    </main>
+    <script src="Js/script.js"></script>
+    <footer>
+        <p>Canadian Business College - JavaScript Final Assignment - Wiam Salaheldin</p>
+    </footer>

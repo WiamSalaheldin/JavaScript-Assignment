@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="topnav">
+                <ul >
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="excel.html">Excel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form id="main-form" name="mainform">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="first-name">First Name :* </label>
+                    <br>
+                    <input type="text" id="firstName" name="first-name">
+                </div>
+                <div>
+                    <label>Last Name:*
+                        <br>
+                        <input type="text" id="lastName" name="last-name">
+
+                    </label>
+                </div>
+                <div>
+                    <label> Email:*
+                        <br>
+                        <input type="email" id="email" name="email">
+
+                    </label>
+                </div>
+                <div>
+                    <label for="address">Address :* </label>
+                    <br>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div>
+                    <label for="city">City :* </label>
+                    <br>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div>
+                    <label for="province">Province :* </label>
+                    <br>
+                    <input type="text" id="province" name="province">
+                </div>
+                <span id="membership">
+
+                    <input name="membership" type="radio" value="p" checked>Premium membership
+
+
+                    <input name="membership" type="radio" value="s">Standard membership
+
+                    <input name="membership" type="radio" value="b">Basic membership
+                </span>
+                <div>
+                    <input type="button" value="Submit" onclick="userForm()">
+                </div>
+                <div>
+                    <input class="reset" type="reset" value="cancel" name="cancel">
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <form id="subform">
+        <fieldset>
+            <legend>Output</legend>
+        
+        <div id="output">
+            Full Name: <span id="fullName"></span>
+            <br> Address:<span id="address-in"></span>
+            <br> Membership: <span id="membershiplabel"></span>
+        </div>
+        
+    </fieldset>
+</form>
+    </main>
+    <script src="Js/script.js"></script>
+    <footer>
+        <p>Canadian Business College - JavaScript Final Assignment - Wiam Salaheldin</p>
+    </footer>
+</body>
+
+</html>
